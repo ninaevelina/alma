@@ -1,0 +1,23 @@
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .statusText {
+        padding: 20px 0;
+        border-bottom: 3px solid black;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .imageContainer {
+        margin-right: 40px;
+    }
+
+    .imageText {
+        text-align: center;
+    }
+}
