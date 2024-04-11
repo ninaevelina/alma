@@ -1,5 +1,10 @@
+import { StyledLink } from "@/ui/shared/links/styled-link";
 import styles from "./page.module.css";
 
 export default function Home() {
-  return <main className={styles.main}></main>;
+  return (
+    <main className={styles.main}>
+      <StyledLink />
+    </main>
+  );
 }

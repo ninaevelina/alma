@@ -1,0 +1,11 @@
+.styledLink {
+    background-color: white;
+    border-radius: 4rem;
+    padding: 16px;
+    width: 200px;
+    text-transform: uppercase;
+    border: 2px solid black;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+}
