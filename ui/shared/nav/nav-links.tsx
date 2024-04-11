@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import styles from "./nav-links.module.css";
 
 const links = [
   { name: "Home", href: "/" },
@@ -16,7 +17,9 @@ export default function NavLinks() {
           <Link
             key={link.name}
             href={link.href}
-            className={`nav-link ${pathname === link.href ? "active" : ""}`}
+            className={`${styles.navlink} ${
+              pathname === link.href ? styles.active : ""
+            }`}
           >
             {link.name}
           </Link>
