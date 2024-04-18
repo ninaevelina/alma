@@ -34,8 +34,12 @@ export const useCat = () => {
 
 export const CatProvider = ({ children }: CatProviderProps) => {
   const [lastFed, setLastFed] = useState<Date | null>(() => {
-    const storedValue = localStorage.getItem("lastFed");
-    return storedValue ? new Date(storedValue) : null;
+    if (typeof window !== "undefined") {
+      const storedValue = localStorage.getItem("lastFed");
+      return storedValue ? new Date(storedValue) : null;
+    } else {
+      return null;
+    }
   });
 
   useEffect(() => {
