@@ -1,6 +1,6 @@
 import Button from "@/ui/meals/button/button";
 import Status from "@/ui/meals/status/status";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 
 export default async function Page() {
   return (

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import styles from "./nav-links.module.css";
+import styles from "./nav-links.module.scss";
 
 const links = [
   { name: "Home", href: "/" },

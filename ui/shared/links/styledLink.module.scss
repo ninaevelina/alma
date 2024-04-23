@@ -1,5 +1,5 @@
 .styledLink {
-    background-color: white;
+    background-color: #efff70;
     border-radius: 4rem;
     padding: 16px;
     width: 200px;
@@ -8,4 +8,10 @@
     font-weight: 600;
     cursor: pointer;
     text-align: center;
+    transition: 0.3s;
+}
+
+.styledLink:hover {
+  background-color: lighten($color: #efff70, $amount: 20%);
+  //add scale
 }

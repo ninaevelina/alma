@@ -3,7 +3,7 @@
 import { useCat } from "@/contexts/CatContext";
 import Image from "next/image";
 import almaImage from "@/public/alma.png";
-import styles from "./status.module.css";
+import styles from "./status.module.scss";
 
 export const Status = () => {
   const { lastFed } = useCat();

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./styledLink.module.css";
+import styles from "./styledLink.module.scss";
 
 export const StyledLink = () => {
   return (
