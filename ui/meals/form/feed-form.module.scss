@@ -1,0 +1,41 @@
+.formSection {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: calc(100% - 100px);
+    margin: 10px auto;
+    outline: 1px solid black;
+    justify-content: center;
+    align-items: center;
+
+
+    .feedForm {
+        outline: 1px solid black;
+        height: 320px;
+        width: 240px;
+        gap: 20px;
+
+        .textContainer {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            outline: 1px solid black;
+            p {
+                font-weight: 500;
+            }
+        }
+
+        .inputs {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+            outline: 1px solid black;
+        }
+
+        .buttonContainer {
+            display: flex;
+            justify-content: center;
+            margin-top: 70px;
+        }
+    }
+}
