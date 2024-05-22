@@ -9,8 +9,8 @@ import React, {
 } from "react";
 
 interface CatContextProps {
-  feed: () => void;
-  lastFed: Date | null;
+  feed: (person: string) => void;
+  lastFed: { time: Date; person: string } | null;
 }
 
 interface CatProviderProps {
@@ -33,28 +33,40 @@ export const useCat = () => {
 };
 
 export const CatProvider = ({ children }: CatProviderProps) => {
-  const [lastFed, setLastFed] = useState<Date | null>(() => {
-    if (typeof window !== "undefined") {
-      const storedValue = localStorage.getItem("lastFed");
-      return storedValue ? new Date(storedValue) : null;
-    } else {
+  const [lastFed, setLastFed] = useState<{ time: Date; person: string } | null>(
+    () => {
+      if (typeof window !== "undefined") {
+        const storedValue = localStorage.getItem("lastFed");
+        if (storedValue) {
+          try {
+            const parsedValue = JSON.parse(storedValue);
+            return {
+              time: new Date(parsedValue.time),
+              person: parsedValue.feeder,
+            };
+          } catch (error) {
+            console.error("Failed to parse value from LS:", error);
+            return null;
+          }
+        }
+      }
       return null;
     }
-  });
+  );
 
   useEffect(() => {
     if (lastFed) {
-      localStorage.setItem("lastFed", lastFed.toISOString());
+      localStorage.setItem("lastFed", JSON.stringify(lastFed));
     } else {
       localStorage.removeItem("lastFed");
     }
   }, [lastFed]);
 
-  const feed = () => {
+  const feed = (person: string) => {
     const currentDateTime = new Date();
-    setLastFed(currentDateTime);
+    setLastFed({ time: currentDateTime, person });
     console.log(
-      `Alma the cat was successfully fed at ${currentDateTime.toLocaleTimeString()} ${
+      `Alma the cat was successfully fed by ${person} at ${currentDateTime.toLocaleTimeString()} ${
         currentDateTime.toLocaleDateString
       }`
     );
