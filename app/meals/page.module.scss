@@ -1,11 +1,11 @@
-.column {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow-y: scroll;
-    //flex-direction: column;
-    //justify-content: space-between;
+@import "../../styles/main";
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    @include media-breakpoint(screen-md) {
+        grid-template-columns: 1fr 1fr;
+    }
 
     .center {
         display: flex;
