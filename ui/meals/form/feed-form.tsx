@@ -21,6 +21,9 @@ export const FeedForm = () => {
         <div className={styles.textContainer}>
           <p>Who&apos;s feeding Alma?</p>
         </div>
+        <div className={styles.header}>
+          <p>Choose feeder:</p>
+        </div>
         <div className={styles.inputs}>
           <label>
             <input
