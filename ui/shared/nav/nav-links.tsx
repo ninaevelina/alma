@@ -11,20 +11,21 @@ const links = [
 export default function NavLinks() {
   const pathname = usePathname();
   return (
-    <>
+    <ul>
       {links.map((link) => {
         return (
-          <Link
-            key={link.name}
-            href={link.href}
-            className={`${styles.navlink} ${
-              pathname === link.href ? styles.active : ""
-            }`}
-          >
-            {link.name}
-          </Link>
+          <li key={link.name}>
+            <Link
+              href={link.href}
+              className={`${styles.navlink} ${
+                pathname === link.href ? styles.active : ""
+              }`}
+            >
+              {link.name}
+            </Link>
+          </li>
         );
       })}
-    </>
+    </ul>
   );
 }
