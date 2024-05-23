@@ -8,6 +8,7 @@ import React, {
   useState,
 } from "react";
 
+//TODO: change person to feeder for better readability
 interface CatContextProps {
   feed: (person: string) => void;
   lastFed: { time: Date; person: string } | null;
@@ -42,7 +43,7 @@ export const CatProvider = ({ children }: CatProviderProps) => {
             const parsedValue = JSON.parse(storedValue);
             return {
               time: new Date(parsedValue.time),
-              person: parsedValue.feeder,
+              person: parsedValue.person,
             };
           } catch (error) {
             console.error("Failed to parse value from LS:", error);
