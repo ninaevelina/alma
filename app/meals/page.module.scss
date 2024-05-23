@@ -1,7 +1,11 @@
 .column {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: scroll;
+    //flex-direction: column;
+    //justify-content: space-between;
 
     .center {
         display: flex;

@@ -1,8 +1,23 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+ // justify-content: center;
   align-items: center;
-  padding: 6rem;
+  padding: 1rem 6rem;
   min-height: 100vh;
+  //background-image: url("../public/alma.png");
+  //background-size: 40px;
+
+  .blocksection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    .heading {
+      font-size: clamp(5rem, -0.9302rem + 27.907vw, 20rem);
+      line-height: 1;
+    }
+  }
 }

@@ -1,10 +1,12 @@
+@import "../styles/main";
+
 :root {
   --max-width: 1100px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  //color-scheme: light dark;
   background-color: rgba(241, 252, 224, 1);
   color: #242424;
 
@@ -58,4 +60,9 @@ button:hover, button:active, button:focus {
 form {
   display: flex;
   flex-direction: column;
+  background-color: $white;
+  border-radius: 20px;
+  filter: drop-shadow(8px 8px 0px $black);
+  border: 1px solid $black;
+  //padding: 20px;
 }
