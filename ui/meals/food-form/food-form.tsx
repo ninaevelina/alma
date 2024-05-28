@@ -3,12 +3,10 @@
 import { Food } from "@/lib/definitions";
 import { ChangeEvent, FormEvent, useState } from "react";
 import styles from "./food-form.module.scss";
+import { useFoods } from "@/contexts/FoodsContext";
 
-interface AddFoodProps {
-  addFood: (food: Food) => void;
-}
-
-export const FoodForm = ({ addFood }: AddFoodProps) => {
+export const FoodForm = () => {
+  const { add } = useFoods();
   const [userInput, setUserInput] = useState("");
 
   const handleSubmit = (e: FormEvent) => {
@@ -16,8 +14,9 @@ export const FoodForm = ({ addFood }: AddFoodProps) => {
     const newFood: Food = {
       name: userInput,
       isBought: false,
+      id: new Date().getTime(),
     };
-    addFood(newFood);
+    add(newFood);
     setUserInput("");
   };
 
