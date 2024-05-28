@@ -17,6 +17,14 @@ export const FeedForm = () => {
   };
   return (
     <section className={styles.formSection}>
+      {lastFed && (
+        <article className={styles.statusText}>
+          <p>
+            Last fed by {lastFed.person} at {lastFed.time.toLocaleTimeString()}{" "}
+            on the {lastFed.time.toLocaleDateString()}
+          </p>
+        </article>
+      )}
       <form onSubmit={handleSubmit} className={styles.feedForm}>
         <div className={styles.textContainer}>
           <p>Who&apos;s feeding Alma?</p>
@@ -52,12 +60,6 @@ export const FeedForm = () => {
           </button>
         </div>
       </form>
-      {lastFed && (
-        <p>
-          Last fed by {lastFed.person} at {lastFed.time.toLocaleTimeString()} on{" "}
-          {lastFed.time.toLocaleDateString()}
-        </p>
-      )}
     </section>
   );
 };
