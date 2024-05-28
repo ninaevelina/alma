@@ -14,7 +14,6 @@ export const Status = () => {
   const differenceInHrs = difference / 1000 / 60 / 60;
 
   const showHidePrompt = () => {
-    //Todo: change image of alma when hungry
     if (differenceInHrs > 4) {
       return (
         <div className={styles.imageContainer}>
@@ -28,8 +27,8 @@ export const Status = () => {
             <div className={styles.imageBubble}>
               <Image
                 src={bubbleHungry.src}
-                height={100}
-                width={140}
+                height={50}
+                width={100}
                 alt="Chat bubble"
               />
             </div>

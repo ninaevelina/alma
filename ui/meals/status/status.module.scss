@@ -1,14 +1,19 @@
+@import "../../../styles/main";
+
 .status {
     height: 300px;
     width: 300px;
     outline: 1px solid black;
+    margin: 20px 0px;
 
     .imageContainer {
         position: relative;
+        padding: 20px;
+        @include rounded-card;
 
         .imageBubble {
             position: absolute;
-            top: 0;
+            top: 20px;
             right: 0;
             width: 140px;
         }
