@@ -1,0 +1,47 @@
+@import "../../../styles/main";
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    @include media-breakpoint(screen-md) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .formContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .listContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+
+        h2 {
+            position: absolute;
+            top: 0;
+        }
+        .list {
+            list-style-type: none;
+            width: 50%;
+
+            .listItem {
+                font-weight: 500;
+                border-radius: 20px;
+                border: 1px solid $black;
+                background-color: $white;
+                padding: 5px;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+            }
+        }
+
+    }
+
+}

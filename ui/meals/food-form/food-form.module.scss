@@ -1,0 +1,40 @@
+@import "../../../styles/main";
+
+.foodForm {
+    height: 320px;
+    width: 240px;
+    gap: 20px;
+    justify-content: space-around;
+
+    .inputContainer {
+        display: flex;
+        justify-content: center;
+
+        .input {
+            border-radius: 10px;
+            outline: none;
+            border: 1px solid $black;
+            width: calc(100% - 3rem);
+            height: 24px;
+            border: 1px solid $black;
+            font-family: $secondary-font;
+            padding: 5px;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+        .input:focus {
+            filter: drop-shadow(2px 2px 0px $black);
+        }
+        .input::placeholder {
+            position: absolute;
+            left: 4px;
+        }
+
+    }
+
+    .buttonContainer {
+        display: flex;
+        justify-content: center;
+    }
+}
