@@ -3,6 +3,10 @@
   @include flex-column;
   align-items: center;
   padding: 1rem 6rem;
+  margin: 50px auto;
+  @include media-breakpoint(screen-lg) {
+    margin: 20px auto;
+  }
 
   .blocksection {
     @include flex-column;

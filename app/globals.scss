@@ -34,6 +34,9 @@ main {
 
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
+  text-transform: uppercase;
+  font-family: $secondary-font;
+  font-weight: 600;
 }
 
 a {
