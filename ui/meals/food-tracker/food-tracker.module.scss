@@ -24,10 +24,6 @@
         flex-direction: column;
         position: relative;
         padding: 40px 0px;
-        /*margin-top: 60px;
-        @include media-breakpoint(screen-md) {
-            margin-top: 0;
-        }*/
 
         h2 {
             margin-bottom: 30px;
@@ -45,29 +41,11 @@
             gap: 10px;
 
             .listItem {
-                font-weight: 600;
-                border-radius: 20px;
-                border: 1px solid $black;
-                background-color: $white;
-                padding: 10px;
-                box-sizing: border-box;
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                font-family: $secondary-font;
+                @include list-item;
             }
             .listItemBought {
-                font-weight: 600;
-                border-radius: 20px;
-                border: 1px solid $black;
-                background-color: $white;
-                padding: 10px;
-                box-sizing: border-box;
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                font-family: $secondary-font;
-                text-decoration: line-through;
-
-                
+                @include list-item;
+                text-decoration: line-through;     
             }
         }
 
