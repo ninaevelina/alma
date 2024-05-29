@@ -7,7 +7,7 @@
 - Record who last fed Alma and when (time and date) they did it.
 - Record which foods to buy for Alma
 
-All data is stored and retrieved from Local Storage.
+All data is stored and retrieved from localStorage.
 
 ## Run Locally
 
