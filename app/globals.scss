@@ -5,7 +5,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  background-color: rgba(241, 252, 224, 1);
+  background-color: $pastel-green;
   color: #242424;
 
   font-synthesis: none;
@@ -45,13 +45,13 @@ a {
 }
 
 button {
-  background: rgba(252,129,180);
+  background: $pink;
   width: 180px;
   height: 50px;
   padding: 0 20px;
-  border: 1px solid #000;
-  box-shadow: 4px 4px 0 #000;
-  color: #000;
+  border: 1px solid $black;
+  box-shadow: 4px 4px 0 $black;
+  color: $black;
   text-transform: uppercase;
   transition: 0.5s;
   outline: 0;
@@ -61,7 +61,7 @@ button {
 
 button:hover, button:active, button:focus {
   transition: color 0.3s, background 0.3s, box-shadow 0.3s;
-  box-shadow: 0 0 0 #000;
+  box-shadow: 0 0 0 $black;
   outline: 0;
 }
 
