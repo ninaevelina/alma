@@ -68,12 +68,10 @@ button:hover, button:active, button:focus {
 }
 
 form {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   background-color: $white;
   border-radius: 20px;
   filter: drop-shadow(8px 8px 0px $black);
   border: 1px solid $black;
-  //padding: 20px;
   font-family: $secondary-font;
 }

@@ -43,3 +43,8 @@
     -moz-box-sizing: border-box;
     font-family: $secondary-font;
 }
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
