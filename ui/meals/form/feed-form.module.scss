@@ -3,8 +3,7 @@
     @include flex-column;
     gap: 50px;
     outline: 1px solid black;
-    justify-content: center;
-    align-items: center;
+    @include center-content;
     margin: 20px 0px;
 
     .statusText {

@@ -7,8 +7,7 @@
   .blocksection {
     @include flex-column;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
+    @include center-content;
 
     .heading {
       font-size: clamp(5rem, -0.9302rem + 27.907vw, 20rem);

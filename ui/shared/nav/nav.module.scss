@@ -13,8 +13,7 @@
     ul {
         list-style-type: none;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        @include center-content;
         outline: 1px solid black;
         height: 60px;
     }

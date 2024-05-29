@@ -10,16 +10,14 @@
 
     .formContainer {
         @include flex-column;
-        justify-content: center;
-        align-items: center;
+        @include center-content;
         gap: 30px;
         margin-bottom: 30px;
     }
 
     .listContainer {
         @include flex-column;
-        justify-content: center;
-        align-items: center;
+        @include center-content;
         position: relative;
         padding: 40px 0px;
 

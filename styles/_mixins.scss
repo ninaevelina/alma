@@ -48,3 +48,8 @@
     display: flex;
     flex-direction: column;
 }
+
+@mixin center-content {
+    align-items: center;
+    justify-content: center;
+}
