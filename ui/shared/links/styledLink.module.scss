@@ -1,17 +1,20 @@
 .styledLink {
-    background-color: #efff70;
-    border-radius: 4rem;
-    padding: 16px;
-    width: 200px;
-    text-transform: uppercase;
-    border: 2px solid black;
-    font-weight: 600;
-    cursor: pointer;
-    text-align: center;
-    transition: 0.3s;
+  background: rgba(252,129,180);
+  width: 180px;
+  height: 50px;
+  padding: 0 20px;
+  border: 1px solid #000;
+  box-shadow: 4px 4px 0 #000;
+  color: #000;
+  text-transform: uppercase;
+  transition: 0.5s;
+  outline: 0;
+  appearance: none;
+  text-align: center;
 }
 
 .styledLink:hover {
-  background-color: lighten($color: #efff70, $amount: 20%);
-  //add scale
+  transition: color 0.3s, background 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 0 #000;
+  outline: 0;
 }

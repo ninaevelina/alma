@@ -8,7 +8,6 @@ import React, {
   useState,
 } from "react";
 
-//TODO: change person to feeder for better readability
 interface CatContextProps {
   feed: (person: string) => void;
   lastFed: { time: Date; person: string } | null;

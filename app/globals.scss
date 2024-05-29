@@ -5,8 +5,6 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  //color-scheme: light dark;
   background-color: rgba(241, 252, 224, 1);
   color: #242424;
 
@@ -29,13 +27,9 @@ body {
   overflow-x: hidden;
 }
 
-body {
-}
-
 main {
   margin: 20px auto;
   width: calc(100% - 4rem);
-  outline: 1px solid black;
 }
 
 h1, h2, h3, h4, h5, h6 {

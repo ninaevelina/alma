@@ -4,8 +4,10 @@
     padding: 0 20px;
     font-weight: 500;
     text-transform: uppercase;
+    font-family: $secondary-font;
 }
 
 .active {
     text-decoration: underline;
+    font-weight: 600;
 }
