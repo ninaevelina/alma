@@ -26,6 +26,9 @@ export const FoodForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className={styles.foodForm}>
+      <div className={styles.headingContainer}>
+        <p>Foods to buy</p>
+      </div>
       <div className={styles.inputContainer}>
         <input
           type="text"

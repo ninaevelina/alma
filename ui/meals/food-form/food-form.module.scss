@@ -6,6 +6,16 @@
     gap: 20px;
     justify-content: space-around;
 
+    .headingContainer {
+        display: flex;
+        justify-content: center;
+
+        p {
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+
     .inputContainer {
         display: flex;
         justify-content: center;
